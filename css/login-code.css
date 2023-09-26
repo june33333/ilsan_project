@@ -1,0 +1,141 @@
+body,header,section,footer,nav,ul,li,h1,h2,h3,p{ margin:0px;  padding:0px; }
+ul{ list-style:none; }
+a{ text-decoration:none; color:#000; }
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+h1,h2,h3,h4,p,span,button,li,ul,a{
+    font-family:'Pretendard-Regular';
+}
+input:focus{
+    outline:none;
+}
+
+body{
+    
+}
+#login{
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+#login>h1{
+    margin:0 auto;
+    padding-bottom:2%;
+}
+#login>h1>a>img{
+    width:60px;  height:auto;
+    vertical-align:sub;
+    margin-left:-30px;
+}
+#login>.container{
+    padding:30px;
+    border:1px solid #ddd;
+}
+#login>.container>.login_form{
+    width:auto; margin:0 auto;
+}
+#login>.container>.login_form>.input-enter{
+    width: 100%;
+    height: 46px;
+    max-height: 100%;
+    margin-top:15px;
+    margin-bottom:38px;
+}
+#login>.container>.login_form>.input-enter>input{
+    display:flex;
+    font-size:15px;
+    padding-left: 15px;
+    width:293px; height:100%;
+    font-weight:600;
+    margin:0 auto;
+    text-align:center;
+}
+#login>.container>.login_form>.input-enter:nth-child(1)>input{
+    background: url(../img/code.svg) center right no-repeat;
+    background-size:30px;
+    background-position-x:260px;
+}
+#login>.container>.login_form>.input-enter>span{
+   display:block; margin-top:1%;
+}
+.miss_code{
+    color: #8e8e; padding-left:10px;
+    display:none!important;
+    text-align:center;
+}
+
+/* 자동로그인 */
+/*
+.option-zone{
+    width:315px;
+    display:flex;
+    justify-content:space-between;
+}
+.option-zone>.auto-login>label{
+    cursor: pointer;
+}
+.option-zone>.auto-login>label>input{
+    width:18px; height:18px;
+    vertical-align:sub; margin-right:8px;
+}
+.option-zone>.auto-login>label>input:focus{
+    outline:none;
+}
+.option-zone>a{
+    color:#fff; letter-spacing:1px;
+}
+*/
+/* 로그인 */
+#login>.container>.btnbox{
+    display:flex; width:314px;
+    justify-content: space-between;
+    align-items: center; margin:0 auto;
+}
+#login>.container>.btnbox>button{
+    width:150px;
+    background-color: #1348d5;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border:0px;
+    letter-spacing:1px;
+}
+#login>.container>.btnbox>button:nth-child(1){
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    font-size:18px;
+    border-radius: 5px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+}
+#login>.container>.btnbox>button:nth-child(2){
+    background: rgb(255,27,0);
+    background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+    font-size:18px;
+    border-radius: 5px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+}
+#login>.container>button:hover{
+    background: #2C5CE5;
+    transition: all 1.1s;
+}
